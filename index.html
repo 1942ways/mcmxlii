@@ -615,15 +615,39 @@
       color: var(--gold);
     }
 
-    svg.tee {
-      width: 170px;
-      height: 188px;
+    .order-btn {
+      display: block;
+      width: 100%;
+      background: var(--gold);
+      border: none;
+      padding: 14px 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--black);
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: background .25s, letter-spacing .25s;
     }
 
-    .tee-glyph {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 300;
+    .order-btn:hover {
+      background: var(--gold-lt);
       letter-spacing: 5px;
+    }
+
+    .p-photo {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .order-strip {
+      background: var(--ob);
+      border-top: 1px solid var(--grey);
     }
 
     /* ── COUNTDOWN ── */
@@ -947,7 +971,7 @@
     </div>
   </section>
 
-  <!-- ══ MANIFESTO STRIP ══ -->
+  <!-- ══ MANIFESTO STRIP ── -->
   <div class="manifesto">
     <p class="manifesto-text">
       "Real luxury doesn't announce itself.<br>
@@ -1063,91 +1087,80 @@
       <p class="lead">The store opens once. It closes on time. No extensions, no restocks, no exception.</p>
 
       <div class="product-grid">
+
         <div class="p-card reveal">
-          <div class="p-visual pv-ivory">
-            <div class="p-badge">Drop 01</div>
-            <svg class="tee" viewBox="0 0 170 188" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M57 14L28 37 6 60l22 10v104h114V70l22-10L142 37 113 14q-8 12-27.5 12T57 14Z" fill="#EDEAD4"
-                stroke="#D6D2C6" stroke-width=".8" />
-              <text x="85" y="100" text-anchor="middle" class="tee-glyph" font-size="13" fill="#111"
-                opacity=".78">MCMXLII</text>
-              <text x="85" y="112" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-size="4.5"
-                font-weight="500" letter-spacing="3" fill="#111" opacity=".3">MMXXVI</text>
-            </svg>
+          <div style="position:relative;">
+            <div class="p-badge" style="position:absolute;top:18px;right:18px;z-index:2;">Drop 01</div>
+            <img class="p-photo" src="designs/product-ivory.png" alt="MCMXLII Heavyweight Tee Ivory" loading="lazy">
           </div>
           <div class="p-info">
             <div>
               <div class="p-name">Heavyweight Tee — Ivory</div>
-              <div class="p-detail">300gsm Pima Cotton · Chest Mark</div>
+              <div class="p-detail">300gsm Pima Cotton &middot; Chest Mark</div>
             </div>
             <div class="p-price">$75</div>
+          </div>
+          <div class="order-strip">
+            <a class="order-btn" href="https://1942ways.github.io/mcmxlii/" id="order-ivory" target="_blank"
+              rel="noopener">Order Now &rarr;</a>
           </div>
         </div>
 
         <div class="p-card reveal">
-          <div class="p-visual pv-onyx">
-            <div class="p-badge">Drop 01</div>
-            <svg class="tee" viewBox="0 0 170 188" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M57 14L28 37 6 60l22 10v104h114V70l22-10L142 37 113 14q-8 12-27.5 12T57 14Z" fill="#1A1A1A"
-                stroke="#282828" stroke-width=".8" />
-              <text x="85" y="100" text-anchor="middle" class="tee-glyph" font-size="13" fill="#C9A84C"
-                opacity="1">MCMXLII</text>
-              <text x="85" y="112" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-size="4.5"
-                font-weight="500" letter-spacing="3" fill="#C9A84C" opacity=".45">EST. MCMXLII</text>
-            </svg>
+          <div style="position:relative;">
+            <div class="p-badge" style="position:absolute;top:18px;right:18px;z-index:2;">Drop 01</div>
+            <img class="p-photo" src="designs/product-onyx.png" alt="MCMXLII Heavyweight Tee Onyx" loading="lazy">
           </div>
           <div class="p-info">
             <div>
               <div class="p-name">Heavyweight Tee — Onyx</div>
-              <div class="p-detail">300gsm Pima Cotton · Gold Mark</div>
+              <div class="p-detail">300gsm Pima Cotton &middot; Gold Mark</div>
             </div>
             <div class="p-price">$75</div>
+          </div>
+          <div class="order-strip">
+            <a class="order-btn" href="https://1942ways.github.io/mcmxlii/" id="order-onyx" target="_blank"
+              rel="noopener">Order Now &rarr;</a>
           </div>
         </div>
 
         <div class="p-card reveal">
-          <div class="p-visual pv-sand">
-            <div class="p-badge">Drop 01</div>
-            <svg width="200" height="155" viewBox="0 0 240 170" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M30 106Q30 36 120 32Q210 36 210 106Z" fill="#DDD9CF" stroke="#C8C4BA" stroke-width=".8" />
-              <path
-                d="M18 111Q30 105 120 105Q210 105 222 111Q228 122 218 127Q185 132 120 132Q55 132 22 127Q12 122 18 111Z"
-                fill="#D2CEC4" stroke="#B8B4AA" stroke-width=".8" />
-              <path d="M36 105Q120 101 204 105" stroke="#BFBBB1" stroke-width=".8" fill="none" />
-              <text x="120" y="79" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14"
-                font-weight="300" letter-spacing="5.5" fill="#1A1A1A" opacity=".78">MCMXLII</text>
-            </svg>
+          <div style="position:relative;">
+            <div class="p-badge" style="position:absolute;top:18px;right:18px;z-index:2;">Drop 01</div>
+            <img class="p-photo" src="designs/product-sand.png" alt="MCMXLII Structured Cap Sand" loading="lazy">
           </div>
           <div class="p-info">
             <div>
               <div class="p-name">Structured Cap — Sand</div>
-              <div class="p-detail">6-Panel · Tonal Thread · Strapback</div>
+              <div class="p-detail">6-Panel &middot; Tonal Thread &middot; Strapback</div>
             </div>
             <div class="p-price">$65</div>
+          </div>
+          <div class="order-strip">
+            <a class="order-btn" href="https://1942ways.github.io/mcmxlii/" id="order-sand" target="_blank"
+              rel="noopener">Order Now &rarr;</a>
           </div>
         </div>
 
         <div class="p-card reveal">
-          <div class="p-visual pv-night">
-            <div class="p-badge">Drop 01</div>
-            <svg width="200" height="155" viewBox="0 0 240 170" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M30 106Q30 36 120 32Q210 36 210 106Z" fill="#1C1E28" stroke="#262830" stroke-width=".8" />
-              <path
-                d="M18 111Q30 105 120 105Q210 105 222 111Q228 122 218 127Q185 132 120 132Q55 132 22 127Q12 122 18 111Z"
-                fill="#14161E" stroke="#1E2028" stroke-width=".8" />
-              <path d="M36 105Q120 101 204 105" stroke="#262830" stroke-width=".8" fill="none" />
-              <text x="120" y="79" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14"
-                font-weight="300" letter-spacing="5.5" fill="#C9A84C" opacity="1">MCMXLII</text>
-            </svg>
+          <div style="position:relative;">
+            <div class="p-badge" style="position:absolute;top:18px;right:18px;z-index:2;">Drop 01</div>
+            <img class="p-photo" src="designs/product-midnight.png" alt="MCMXLII Structured Cap Midnight"
+              loading="lazy">
           </div>
           <div class="p-info">
             <div>
               <div class="p-name">Structured Cap — Midnight</div>
-              <div class="p-detail">6-Panel · Gold Thread · Strapback</div>
+              <div class="p-detail">6-Panel &middot; Gold Thread &middot; Strapback</div>
             </div>
             <div class="p-price">$65</div>
           </div>
+          <div class="order-strip">
+            <a class="order-btn" href="https://1942ways.github.io/mcmxlii/" id="order-midnight" target="_blank"
+              rel="noopener">Order Now &rarr;</a>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -1183,7 +1196,7 @@
 
       <div class="drop-cta">
         <div class="wl-label">One notification. Drop announcement only.</div>
-        <form class="wl-form" id="f-drop" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="wl-form" id="f-drop" action="https://formspree.io/f/maqdljdn" method="POST">
           <input class="wl-input" type="email" name="email" placeholder="your@email.com" required>
           <button class="wl-btn" type="submit">Notify</button>
         </form>
